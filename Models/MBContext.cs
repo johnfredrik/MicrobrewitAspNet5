@@ -13,9 +13,10 @@ namespace MicrobrewitAspNet5.Models
 
         protected override void OnConfiguring(EntityOptionsBuilder options)
         {
-            //options.UseSqlite(@"Data Source=C:\temp\HomeMenu.db");
-            var con = Startup.Configuration.Get("Data:SQLite:Connectionstring");
-            options.UseSqlite(Startup.Configuration.Get("Data:SQLite:Connectionstring"));
+            options.UseSqlite(@"Data Source=C:\temp\mb.db");
+            //var con = Startup.Configuration.Get("Data:SQLite:Connectionstring");
+            //options.UseSqlite(Startup.Configuration.Get("Data:SQLite:Connectionstring"));
+
 
         }
 

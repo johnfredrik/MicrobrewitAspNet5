@@ -46,6 +46,8 @@ namespace MicrobrewitAspNet5.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]Glass glass)
         {
+            if (glass == null) return;
+
         }
 
         // DELETE api/values/5

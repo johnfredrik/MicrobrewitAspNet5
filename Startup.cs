@@ -3,18 +3,18 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.AspNet.Mvc;
-using Microsoft.Framework.Runtime;
 using MicrobrewitAspNet5.Models;
+using Microsoft.Framework.Runtime;
 
 namespace MicrobrewitAspNet5
 {
     public class Startup
     {
         public static IConfiguration Configuration { get; set; }
-        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
+        public Startup(IHostingEnvironment env)
         {
 
-            Configuration = new Configuration(appEnv.ApplicationBasePath).AddJsonFile("config.json").AddEnvironmentVariables();
+            //Configuration = new Configuration(appEnv.ApplicationBasePath).AddJsonFile("config.json").AddEnvironmentVariables();
         }
 
         // This method gets called by a runtime.
