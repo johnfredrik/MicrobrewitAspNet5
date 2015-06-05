@@ -1,0 +1,11 @@
+﻿{
+  "Data": {
+    "DefaultConnection": {
+      "Connectionstring": "Server=NOKLUS24;Database=MicrobrewitDev;Trusted_Connection=True;MultipleActiveResultSets=true"
+    },
+    "SQLite": {
+      "Connectionstring": "Data Source =C:/temp/mb.db"
+    }
+  }
+} 
+
