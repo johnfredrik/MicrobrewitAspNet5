@@ -4,19 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 using MicrobrewitAspNet5.Models;
+using MicrobrewitAspNet5.Repository;
 
 namespace MicrobrewitAspNet5.Controllers
 {
     [Route("api/[controller]")]
     public class GlassController : Controller
     {
+       
         [FromServices]
-        public MbContext DbContext { get; set; }
+        public IGlassRepository GlassRepository { get; set; }
         // GET: api/values
+        
         [HttpGet]
         public IEnumerable<Glass> Get()
         {
-            var result = DbContext.Glasses;
+            var result = GlassRepository.GetAll();
             return result;
         }
 
@@ -24,7 +27,7 @@ namespace MicrobrewitAspNet5.Controllers
         [HttpGet("{id}")]
         public Glass Get(int id)
         {
-            return DbContext.Glasses.SingleOrDefault(g => g.GlassId == id);
+            return GlassRepository.GetSingle(id);
         }
 
         // POST api/values
@@ -37,8 +40,7 @@ namespace MicrobrewitAspNet5.Controllers
             }
             else
             {
-                var glassId = DbContext.Glasses.Max(g => g.GlassId) + 1;
-                DbContext.Glasses.Add(glass);                
+                GlassRepository.Add(glass);              
             }
         }
 

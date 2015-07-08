@@ -2833,18 +2833,15 @@
           "lib/aspnetcore50/System.Diagnostics.Tracing.dll": {}
         }
       },
-      "System.Dynamic.Runtime/4.0.10-beta-22606": {
+      "System.Dynamic.Runtime/4.0.0-beta-23008": {
         "dependencies": {
-          "System.Linq.Expressions": "4.0.0-beta-22606",
-          "System.ObjectModel": "4.0.0-beta-22606",
-          "System.Reflection": "4.0.0-beta-22606",
-          "System.Runtime": "4.0.20-beta-22606"
+          "System.Linq.Expressions": "4.0.0-beta-23008",
+          "System.ObjectModel": "4.0.0-beta-23008",
+          "System.Reflection": "4.0.0-beta-23008",
+          "System.Runtime": "4.0.0-beta-23008"
         },
         "compile": {
-          "lib/contract/System.Dynamic.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/aspnetcore50/System.Dynamic.Runtime.dll": {}
+          "ref/any/System.Dynamic.Runtime.dll": {}
         }
       },
       "System.Globalization/4.0.10-beta-22913": {
@@ -4818,17 +4815,18 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Diagnostics.Tracing.dll"
       ]
     },
-    "System.Dynamic.Runtime/4.0.10-beta-22606": {
-      "sha512": "qOBj2uVGK1aWfXRiYzeHmj09sZdgHdOr/Q6KkbtIpzkxM9RKX3jvbysthydql7xvNVZiEYBMfu5mGIp9xe6vLQ==",
+    "System.Dynamic.Runtime/4.0.0-beta-23008": {
+      "sha512": "yE6k8a9JZw6eqBmLOjRMZZtwgTQYost83ROyE+gNX5vmUb2ucjgjlWwBR6J5Ku2VmyS66NyiN5mNNeECLYVcvQ==",
       "files": [
         "License.rtf",
-        "System.Dynamic.Runtime.4.0.10-beta-22606.nupkg",
-        "System.Dynamic.Runtime.4.0.10-beta-22606.nupkg.sha512",
+        "System.Dynamic.Runtime.4.0.0-beta-23008.nupkg",
+        "System.Dynamic.Runtime.4.0.0-beta-23008.nupkg.sha512",
         "System.Dynamic.Runtime.nuspec",
-        "lib/aspnetcore50/System.Dynamic.Runtime.dll",
-        "lib/contract/System.Dynamic.Runtime.dll",
-        "lib/net45/System.Dynamic.Runtime.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Dynamic.Runtime.dll"
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "ref/any/System.Dynamic.Runtime.dll",
+        "ref/net45/_._",
+        "ref/win8/_._"
       ]
     },
     "System.Globalization/4.0.10-beta-22913": {

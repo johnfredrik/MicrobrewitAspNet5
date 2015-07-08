@@ -5,6 +5,7 @@ using Microsoft.Framework.DependencyInjection;
 using Microsoft.AspNet.Mvc;
 using MicrobrewitAspNet5.Models;
 using Microsoft.Framework.Runtime;
+using MicrobrewitAspNet5.Repository;
 
 namespace MicrobrewitAspNet5
 {
@@ -39,6 +40,7 @@ namespace MicrobrewitAspNet5
 
             //services.AddEntityFramework().AddSqlServer().AddDbContext<RecipeContext>();
             services.AddEntityFramework().AddSqlite().AddDbContext<MbContext>();
+            services.AddTransient<IGlassRepository, GlassRepository>();
         }
 
         // Configure is called after ConfigureServices is called.
